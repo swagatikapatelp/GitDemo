@@ -20,5 +20,10 @@ public class JDBCConnection<WebDriver> extends Base{
 		
 
 	}
+	public void getInfo2 ()
+	{
+		System.out.println("hello2");
+		System.out.println("hello3");
+	}
 
 }
