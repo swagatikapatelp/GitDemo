@@ -16,23 +16,7 @@ public class JDBCConnection<WebDriver> extends Base{
 	public void getInfo () throws IOException, SQLException
 	{
 		
-		// TODO Auto-generated method stub
-		String host="localhost";
-		String port="3306";
-		Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/Qadbt", "root", "Welcome@123");
-		Statement s=(Statement)con.createStatement();
-		ResultSet rs=s.executeQuery("select * from EmployeeInfo where name='Lina';");
-		while(rs.next())
-		{
-		    driver = initializeDriver();
-		    driver.get(prop.getProperty("url2"));
-		    SalesforceLoginPage sp=new SalesforceLoginPage(driver);
-		    sp.getUserName().sendKeys(rs.getString("name"));
-		    sp.getPwd().sendKeys(rs.getString("location"));
-		    sp.getLogin().click();
-			System.out.println(rs.getString("age"));
-			System.out.println(rs.getString("id"));
-		}
+		System.out.println("hello1");
 		
 
 	}
